@@ -3,71 +3,262 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cards &amp; Clans — free card battles</title>
-<meta name="description" content="Cards &amp; Clans: a free card battle game for Windows. Battle the computer or other players online, build decks, climb the Trophy Road.">
-<link rel="stylesheet" href="style.css">
+<title>Cards &amp; Clans — the strategy card game</title>
+<meta name="description" content="Cards & Clans is a free strategy card game for Windows PC: armies, commanders, small dice and one coin that decides who may attack. Battle the computer or a friend online.">
+<meta name="theme-color" content="#06070b">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; font-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'; manifest-src 'self'">
+<link rel="canonical" href="https://mastermythic.github.io/cardsandclans/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cards &amp; Clans">
+<meta property="og:url" content="https://mastermythic.github.io/cardsandclans/">
+<meta property="og:title" content="Cards &amp; Clans — Raise your clan. Break their Core.">
+<meta property="og:description" content="A free strategy card game for Windows PC: armies, commanders, small dice and one coin that decides who may attack.">
+<meta property="og:image" content="https://mastermythic.github.io/cardsandclans/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Cards &amp; Clans logo beside the army commanders in front of a burning nebula.">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cards &amp; Clans — Raise your clan. Break their Core.">
+<meta name="twitter:description" content="A strategy card game of armies, commanders and one coin that decides who may attack.">
+<meta name="twitter:image" content="https://mastermythic.github.io/cardsandclans/og-image.jpg">
+<meta name="twitter:image:alt" content="The Cards &amp; Clans logo beside the army commanders in front of a burning nebula.">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" as="image" href="assets/img/hero-1600.webp" media="(min-width: 761px)">
+<link rel="preload" as="image" href="assets/img/hero-portrait.webp" media="(max-width: 760px)">
+<link rel="preload" href="fonts/cinzel-normal-latin-46932d.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/cards.css">
 </head>
 <body>
-<header class="hero">
-  <img class="hero-art" src="img/nova.jpg" alt="Nova Siege: armies of light and shadow clash over a burning core">
-  <div class="hero-veil"></div>
-  <div class="hero-text">
-    <p class="kicker">FREE · NO ADS · NO ACCOUNTS</p>
-    <h1>Cards &amp; Clans</h1>
-    <p class="lead">Command an army of cards. Battle the computer, or challenge another player online.</p>
-    <a class="button primary" id="download" href="https://github.com/MasterMythic/cardsandclans/releases/latest/download/CardsAndClans-Windows.zip">DOWNLOAD FOR WINDOWS</a>
-    <p class="small">Version <span id="ver">0.3.0</span> · Windows 10 or 11 (64-bit) · about 1.5 GB · <a href="#install">How to install</a></p>
-  </div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="top">
+  <a class="nav__brand" href="#top" aria-label="Cards &amp; Clans, back to top">
+    <img src="assets/img/emblem.webp" alt="" width="44" height="44">
+    <span>Cards <i>&amp;</i> Clans</span>
+  </a>
+  <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+    <span class="sr-only">Menu</span><span class="nav__bars" aria-hidden="true"></span>
+  </button>
+  <nav class="nav__links" id="nav-links" aria-label="Main">
+    <a href="#cards">The cards</a>
+    <a href="#armies">Armies</a>
+    <a href="#worlds">Worlds</a>
+    <a href="#progress">Progression</a>
+    <a href="#download">Download</a>
+  </nav>
 </header>
 
-<main>
-  <section class="modes">
-    <article>
-      <img src="img/nova.jpg" alt="Nova Siege battle art">
-      <h2>Nova Siege</h2>
-      <p>Eight sci-fi armies fight over a dying universe. Four clans and their opposite twins, each with its own Commander, cards and battlefield.</p>
-    </article>
-    <article>
-      <img src="img/bom.jpg" alt="Battles for Liberty battle art">
-      <h2>Battles for Liberty</h2>
-      <p>The same card battles in a world of ancient armies, painted by hand, with its own words, sounds and menus.</p>
-    </article>
-  </section>
+<main id="main">
 
-  <section class="online" id="online">
-    <h2>Play online</h2>
-    <p>Online battles are hosted by the players themselves: one player hosts, the other joins. There are no servers running the game and no accounts to make.</p>
-    <ul>
-      <li><b>Host a battle</b> and tell your friend the 6-letter room code, or leave it listed under <b>Open battles</b> so anyone can join.</li>
-      <li><b>Direct connect</b> works on your home network with no online service at all: one PC hosts, the other types its address.</li>
-      <li><b>Fair play:</b> both games run the full rules and check every move. The cards you haven't played never leave your PC, and every deck and shuffle is checked when the battle ends. Players whose game breaks the rules are blocked automatically.</li>
-      <li><b>Equal Level:</b> card levels don't count online, there are no hints, and each move has a 75-second clock.</li>
-      <li>You can <b>block</b> and <b>report</b> any player from the battle's result page.</li>
-    </ul>
-    <p class="small">Both players need the same version of the game. The game tells you when a new version is out.</p>
-  </section>
+<!-- 1 · Arrival ------------------------------------------------------------------ -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero__art" data-parallax>
+    <picture>
+      <source media="(max-width: 760px)" srcset="assets/img/hero-portrait.webp">
+      <source srcset="assets/img/hero-1600.webp 1600w, assets/img/hero-2560.webp 2560w" sizes="100vw">
+      <img src="assets/img/hero-1600.webp" alt="Commander Aurelian Vance raises his sword in front of the other army commanders, a nebula burning behind them." width="2560" height="1440" fetchpriority="high">
+    </picture>
+  </div>
+  <canvas class="hero__embers" aria-hidden="true"></canvas>
+  <div class="hero__veil" aria-hidden="true"></div>
 
-  <section class="install" id="install">
-    <h2>How to install</h2>
-    <ol>
-      <li>Download <b>CardsAndClans-Windows.zip</b> and unzip it (right-click → <i>Extract All</i>).</li>
-      <li>Open the folder and double-click <b>NovaSiege.exe</b>.</li>
-      <li>Windows may show <i>"Windows protected your PC"</i>, because the game isn't signed with a paid certificate. Click <b>More info</b>, then <b>Run anyway</b>.</li>
-      <li>The first time you host a Direct-connect battle, Windows may ask to let the game through the firewall: allow it.</li>
+  <div class="hero__copy">
+    <img class="hero__logo" src="assets/img/logo.webp" alt="Cards &amp; Clans" width="900" height="323">
+    <h1 id="hero-title">Raise your clan.<br>Break their Core.</h1>
+    <p class="hero__lede">A strategy card game of armies, commanders and one coin that decides who may attack. Free for Windows&nbsp;PC.</p>
+    <div class="hero__actions">
+      <a class="btn btn--gold" href="https://github.com/MasterMythic/cardsandclans/releases/latest/download/CardsAndClans-Windows.zip">Download for Windows</a>
+      <a class="btn btn--ghost" href="#cards">Hold the cards</a>
+    </div>
+    <p class="hero__lede">Version <span id="ver">0.4.0</span> · Windows 10 or 11 (64-bit) · about 1.1&nbsp;GB · <a href="#download">How to install</a></p>
+  </div>
+  <a class="hero__scroll" href="#cards" aria-label="Scroll to the cards"><span></span></a>
+</section>
+
+<!-- 2 · The cards (inspect) ---------------------------------------------------------- -->
+<section class="vault" id="cards" aria-labelledby="vault-title">
+  <div class="vault__intro">
+    <p class="eyebrow">Interactive · The cards</p>
+    <h2 id="vault-title">Built to be&nbsp;held.</h2>
+    <p>Move over a card and it tilts toward you, the painting shifting behind its frame while light runs across the foil. Pick one up to turn it in your hand, or flip it to see its army's back.</p>
+    <p class="vault__how vault__how--pointer"><span class="key">Hover</span> tilt <span class="key">Click</span> pick up <span class="key">Drag</span> turn <span class="key">F</span> flip</p>
+    <p class="vault__how vault__how--touch"><span class="key">Tap</span> pick up <span class="key">Drag</span> turn <span class="key">Flip</span> see the back</p>
+  </div>
+  <div class="vault__hand" role="list" aria-label="Commander cards"></div>
+
+  <div class="inspect" hidden>
+    <div class="inspect__scrim" data-close></div>
+    <div class="inspect__panel" role="dialog" aria-modal="true" aria-labelledby="inspect-name">
+      <div class="inspect__stage"></div>
+      <div class="inspect__info">
+        <p class="eyebrow inspect__army"></p>
+        <h3 id="inspect-name"></h3>
+        <p class="inspect__type"></p>
+        <dl class="inspect__stats"></dl>
+        <p class="inspect__text"></p>
+        <p class="inspect__flavor"></p>
+        <div class="inspect__buttons">
+          <button class="btn btn--ghost btn--sm" type="button" data-flip>Flip card <span class="key">F</span></button>
+          <button class="btn btn--ghost btn--sm" type="button" data-close>Put it back <span class="key">Esc</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 · Decisions over luck --------------------------------------------------------- -->
+<section class="creed" aria-labelledby="creed-title">
+  <div class="creed__inner">
+    <p class="eyebrow">How a round works</p>
+    <div class="creed__title">
+      <h2 id="creed-title">Skill first. A little&nbsp;luck.</h2>
+      <div class="coin-row">
+        <button class="coin-flip" type="button" aria-label="Pass the Assault coin"><img src="assets/img/coin.webp" alt="" width="320" height="320"></button>
+        <p class="coin-say" aria-live="polite">Your round: you may attack.</p>
+      </div>
+    </div>
+    <ol class="creed__steps">
+      <li><b>One coin.</b> Each round, one side holds the Assault coin. Only they may attack, and the coin changes hands every round.</li>
+      <li><b>One action at a time.</b> Play a unit, cast a spell, attack or pass, then it is your opponent's move.</li>
+      <li><b>Small dice.</b> Every card rolls a narrow range around its number: a 3 hits for 2 to 4. Keen cards can land a critical hit, and the game shows the lowest and highest result before you commit.</li>
     </ol>
-    <p>To update, download the new zip and replace the old folder. Your saves are kept (they live in your user folder, not the game folder).</p>
-  </section>
+  </div>
+</section>
+
+<!-- 5 · Armies -------------------------------------------------------------------- -->
+<section class="armies" id="armies" aria-labelledby="armies-title">
+  <div class="armies__glow" aria-hidden="true"></div>
+  <header class="armies__head">
+    <p class="eyebrow">Nova Siege · Eight armies</p>
+    <h2 id="armies-title">Every army has a plan.<br>And a weakness.</h2>
+  </header>
+  <div class="armies__body">
+    <div class="armies__list" role="tablist" aria-label="Armies" aria-orientation="vertical"></div>
+    <div class="armies__stage" role="tabpanel" tabindex="0" aria-labelledby="">
+      <div class="holo"><img alt="" width="820" height="820"></div>
+      <div class="army">
+        <img class="army__emblem" alt="" width="200" height="200">
+        <p class="eyebrow army__pair"></p>
+        <h3 class="army__name"></h3>
+        <p class="army__look"></p>
+        <dl class="army__facts">
+          <div><dt>Plan</dt><dd class="army__plan"></dd></div>
+          <div><dt>Weakness</dt><dd class="army__weak"></dd></div>
+          <div><dt>Commander</dt><dd class="army__cmd"></dd></div>
+          <div><dt>Difficulty</dt><dd class="army__diff"></dd></div>
+        </dl>
+        <div class="army__cards">
+          <p class="army__cards-label">Signature cards <span>Pick one up</span></p>
+          <div class="army__row" role="list" aria-label="Signature cards"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · Worlds -------------------------------------------------------------------- -->
+<section class="worlds" id="worlds" aria-labelledby="worlds-title">
+  <header class="worlds__head">
+    <p class="eyebrow">The platform</p>
+    <h2 id="worlds-title">One engine.<br>Many worlds.</h2>
+    <p>Every game mode plays by the same rules on one shared engine, so a new feature or a fix reaches all of them at once. Each world brings its own armies, art and sound.</p>
+  </header>
+  <div class="worlds__grid">
+    <article class="world world--nova">
+      <img src="assets/img/world-novasiege.webp" alt="Aurelian Vance leads the Nova Siege commanders out of a burning nebula." width="760" height="1140" loading="lazy">
+      <div class="world__copy">
+        <p class="world__status">Playable now</p>
+        <h3>Nova Siege</h3>
+        <p>Science fiction. Four powers and their night sides fight over a contested star-lane at the edge of colonised space.</p>
+      </div>
+    </article>
+    <article class="world world--bom">
+      <img src="assets/img/world-bom.webp" alt="A Nephite captain raises a woven war banner above a wooden stronghold." width="760" height="1140" loading="lazy">
+      <div class="world__copy">
+        <p class="world__status">Playable now</p>
+        <h3>The Book of Mormon: Battles for Liberty</h3>
+        <p>Lead the Nephites, the Lamanites, the Gadianton Robbers or the Court of King Noah, in wood, bronze and woven cloth.</p>
+      </div>
+    </article>
+    <article class="world world--lvr">
+      <img src="assets/img/world-politics.webp" alt="An empty marble debate chamber lit red on one side and blue on the other." width="760" height="1140" loading="lazy">
+      <div class="world__copy">
+        <p class="world__status world__status--soon">In design</p>
+        <h3>Left V Right</h3>
+        <p>Politics, played by the same rules.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- 7 · Progression --------------------------------------------------------------- -->
+<section class="progress" id="progress" aria-labelledby="progress-title">
+  <header class="progress__head">
+    <p class="eyebrow">Interactive · Clan Ascent</p>
+    <h2 id="progress-title">Everything is earned by&nbsp;playing.</h2>
+    <p>Drag the road. Win battles to climb through five painted arenas, claim road rewards and unlock the night-side armies.</p>
+  </header>
+  <div class="road" tabindex="0" role="region" aria-label="Clan Ascent arenas, scrollable">
+    <div class="road__track">
+      <figure><img src="assets/img/road-1.webp" alt="Training Grounds: a bright plaza of banners and white towers." width="1400" height="933" loading="lazy" draggable="false"><figcaption><span>Arena 1</span>Training Grounds</figcaption></figure>
+      <figure><img src="assets/img/road-3.webp" alt="Void Rift arena." width="1400" height="933" loading="lazy" draggable="false"><figcaption><span>Arena 3</span>Void Rift</figcaption></figure>
+      <figure><img src="assets/img/road-5.webp" alt="Throne of Stars: a golden stairway to a ringed throne above still water." width="1400" height="933" loading="lazy" draggable="false"><figcaption><span>Arena 5</span>Throne of Stars</figcaption></figure>
+    </div>
+  </div>
+  <ol class="ledger">
+    <li><span class="ledger__n">01</span><h3>Training</h3><p>Three coached lessons take you from your first card to commanders.</p></li>
+    <li><span class="ledger__n">02</span><h3>The March</h3><p>A seven-step solo run across a star map, collecting relics on the way.</p></li>
+    <li><span class="ledger__n">03</span><h3>Deck Builder</h3><p>Mix two armies for alliance bonuses, or fly a single army under a Pure Banner.</p></li>
+    <li><span class="ledger__n">04</span><h3>Card levels</h3><p>Cards level from 1 to 10 with battle experience. Perks open at levels 2, 5 and 8, and mods from level 7.</p></li>
+  </ol>
+</section>
+
+<!-- 7b · Download --------------------------------------------------------------- -->
+<section class="progress" id="download" aria-labelledby="download-title">
+  <header class="progress__head">
+    <p class="eyebrow">Version 0.4.0 · Windows 10 or 11 (64-bit)</p>
+    <h2 id="download-title">Download and&nbsp;play.</h2>
+    <p>Free, with no ads and no accounts. Battle the computer, or host a battle and send a friend the 6-letter room code. Both players need the same version; the game tells you when a new one is out. To update, replace the old folder with the new zip: your saves are kept. <a href="privacy.html">Privacy</a></p>
+    <div class="hero__actions">
+      <a class="btn btn--gold" href="https://github.com/MasterMythic/cardsandclans/releases/latest/download/CardsAndClans-Windows.zip">Download for Windows</a>
+      <a class="btn btn--ghost" href="https://github.com/MasterMythic/cardsandclans/releases">All versions</a>
+    </div>
+  </header>
+  <ol class="ledger">
+    <li><span class="ledger__n">01</span><h3>Unzip</h3><p>Download <b>CardsAndClans-Windows.zip</b>, right-click it and choose <i>Extract All</i>.</p></li>
+    <li><span class="ledger__n">02</span><h3>Play</h3><p>Open the <b>Cards and Clans</b> folder and double-click <b>NovaSiege.exe</b>.</p></li>
+    <li><span class="ledger__n">03</span><h3>First run</h3><p>Windows may say <i>"Windows protected your PC"</i> because the game has no paid signature. Click <b>More info</b>, then <b>Run anyway</b>.</p></li>
+    <li><span class="ledger__n">04</span><h3>Online</h3><p>Open <b>Online</b>: host a battle, join with a code, or pick one from <b>Open battles</b>. Card levels don't count online, and both games check every move. Allow the firewall prompt if you host a Direct-connect battle.</p></li>
+  </ol>
+</section>
+
+<!-- 8 · Close --------------------------------------------------------------------- -->
+<section class="close" aria-labelledby="close-title">
+  <img class="close__art" src="assets/img/hangar.webp" alt="" width="1600" height="900" loading="lazy">
+  <div class="close__copy">
+    <img src="assets/img/emblem.webp" alt="" width="96" height="96" loading="lazy">
+    <h2 id="close-title">The clans are gathering.</h2>
+    <p>Free for Windows PC.</p>
+    <div class="hero__actions">
+      <a class="btn btn--gold" href="https://github.com/MasterMythic/cardsandclans/releases/latest/download/CardsAndClans-Windows.zip">Download for Windows</a>
+      <a class="btn btn--ghost" href="#armies">Choose your army</a>
+    </div>
+  </div>
+</section>
 </main>
 
-<footer>
-  <p>Cards &amp; Clans is free and non-profit. Game art was made for this game. <a href="privacy.html">Privacy</a></p>
+<footer class="foot">
+  <img src="assets/img/logo.webp" alt="Cards &amp; Clans" width="180" height="65" loading="lazy">
+  <p>© 2026 Kelvin J Troy. A work in progress: names, cards and art may change. <a href="privacy.html">Privacy</a> · <a href="https://github.com/MasterMythic/cardsandclans">GitHub</a></p>
 </footer>
-<script>
-  // show the newest version number from version.json
-  fetch("version.json", { cache: "no-store" }).then(r => r.json()).then(v => {
-    if (v.version) document.getElementById("ver").textContent = v.version;
-    if (v.zip) document.getElementById("download").href = v.zip;
-  }).catch(() => {});
-</script>
+
+<script src="js/game-data.js" defer></script>
+<script src="js/cards.js" defer></script>
+<script src="js/main.js" defer></script>
 </body>
 </html>

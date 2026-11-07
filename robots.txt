@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /tools/
+
+Sitemap: https://mastermythic.github.io/cardsandclans/sitemap.xml

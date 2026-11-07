@@ -1,0 +1,560 @@
+{
+ "_frames": {
+  "concord_champion": [
+   0.0844,
+   0.074,
+   0.9141,
+   0.5698
+  ],
+  "swarm_champion": [
+   0.0844,
+   0.0698,
+   0.9156,
+   0.5708
+  ],
+  "axiom_champion": [
+   0.0859,
+   0.1375,
+   0.9141,
+   0.5687
+  ],
+  "veyran_champion": [
+   0.0844,
+   0.0906,
+   0.9141,
+   0.5698
+  ],
+  "lunar_champion": [
+   0.0844,
+   0.0802,
+   0.9156,
+   0.5687
+  ],
+  "concord_unit": [
+   0.0844,
+   0.0646,
+   0.9156,
+   0.5698
+  ],
+  "concord_spell": [
+   0.0844,
+   0.0646,
+   0.9156,
+   0.5698
+  ],
+  "swarm_unit": [
+   0.0844,
+   0.0656,
+   0.9156,
+   0.5698
+  ],
+  "axiom_unit": [
+   0.0844,
+   0.0688,
+   0.9156,
+   0.5687
+  ],
+  "veyran_unit": [
+   0.0844,
+   0.0656,
+   0.9156,
+   0.5698
+  ],
+  "veyran_spell": [
+   0.0844,
+   0.0667,
+   0.9141,
+   0.5698
+  ],
+  "lunar_unit": [
+   0.0844,
+   0.0656,
+   0.9156,
+   0.5698
+  ],
+  "lunar_spell": [
+   0.0828,
+   0.0656,
+   0.9156,
+   0.5698
+  ],
+  "evergrowth_champion": [
+   0.0844,
+   0.0938,
+   0.9141,
+   0.5698
+  ],
+  "evergrowth_unit": [
+   0.0844,
+   0.0646,
+   0.9156,
+   0.5708
+  ],
+  "paradox_champion": [
+   0.0844,
+   0.1229,
+   0.9141,
+   0.5698
+  ],
+  "paradox_unit": [
+   0.0844,
+   0.0656,
+   0.9141,
+   0.5708
+  ],
+  "nayrev_champion": [
+   0.0859,
+   0.0969,
+   0.9141,
+   0.5687
+  ],
+  "nayrev_unit": [
+   0.0844,
+   0.0646,
+   0.9141,
+   0.5698
+  ],
+  "nayrev_spell": [
+   0.0859,
+   0.0729,
+   0.9141,
+   0.5698
+  ]
+ },
+ "_totalBytes": 7755169,
+ "apple-touch-icon.png": {
+  "w": 180,
+  "h": 180,
+  "bytes": 34583
+ },
+ "art-axiom_ax0.webp": {
+  "w": 640,
+  "h": 640,
+  "bytes": 34716
+ },
+ "art-axiom_interdictor.webp": {
+  "w": 640,
+  "h": 640,
+  "bytes": 36404
+ },
+ "art-axiom_singularity.webp": {
+  "w": 640,
+  "h": 640,
+  "bytes": 37634
+ },
+ "art-concord_aria_vance.webp": {
+  "w": 640,
+  "h": 640,
+  "bytes": 56794
+ },
+ "art-concord_orbital_lance.webp": {
+  "w": 640,
+  "h": 640,
+  "bytes": 47184
+ },
+ "art-concord_sunforge_titan.webp": {
+  "w": 640,
+  "h": 640,
+  "bytes": 84104
+ },
+ "art-evergrowth_ixxa.webp": {
+  "w": 640,
+  "h": 640,
+  "bytes": 66944
+ },
+ "art-evergrowth_ravager_alpha.webp": {
+  "w": 640,
+  "h": 640,
+  "bytes": 60058
+ },
+ "art-evergrowth_spawning_sac.webp": {
+  "w": 640,
+  "h": 640,
+  "bytes": 41946
+ },
+ "art-lunar_aria_vance.webp": {
+  "w": 640,
+  "h": 640,
+  "bytes": 50766
+ },
+ "art-lunar_orbital_lance.webp": {
+  "w": 640,
+  "h": 640,
+  "bytes": 15778
+ },
+ "art-lunar_sunforge_titan.webp": {
+  "w": 640,
+  "h": 640,
+  "bytes": 46194
+ },
+ "art-nayrev_firstfang.webp": {
+  "w": 640,
+  "h": 640,
+  "bytes": 52622
+ },
+ "art-nayrev_kharra.webp": {
+  "w": 640,
+  "h": 640,
+  "bytes": 61530
+ },
+ "art-nayrev_pounce.webp": {
+  "w": 640,
+  "h": 640,
+  "bytes": 68342
+ },
+ "art-paradox_ax0.webp": {
+  "w": 640,
+  "h": 640,
+  "bytes": 50162
+ },
+ "art-paradox_interdictor.webp": {
+  "w": 640,
+  "h": 640,
+  "bytes": 53020
+ },
+ "art-paradox_singularity.webp": {
+  "w": 640,
+  "h": 640,
+  "bytes": 46554
+ },
+ "art-swarm_ixxa.webp": {
+  "w": 640,
+  "h": 640,
+  "bytes": 37362
+ },
+ "art-swarm_ravager_alpha.webp": {
+  "w": 640,
+  "h": 640,
+  "bytes": 37004
+ },
+ "art-swarm_spawning_sac.webp": {
+  "w": 640,
+  "h": 640,
+  "bytes": 40268
+ },
+ "art-veyran_firstfang.webp": {
+  "w": 640,
+  "h": 640,
+  "bytes": 51980
+ },
+ "art-veyran_kharra.webp": {
+  "w": 640,
+  "h": 640,
+  "bytes": 68524
+ },
+ "art-veyran_pounce.webp": {
+  "w": 640,
+  "h": 640,
+  "bytes": 43514
+ },
+ "back-axiom.webp": {
+  "w": 640,
+  "h": 960,
+  "bytes": 78888
+ },
+ "back-concord.webp": {
+  "w": 640,
+  "h": 960,
+  "bytes": 89138
+ },
+ "back-evergrowth.webp": {
+  "w": 640,
+  "h": 960,
+  "bytes": 154374
+ },
+ "back-lunar.webp": {
+  "w": 640,
+  "h": 960,
+  "bytes": 93360
+ },
+ "back-nayrev.webp": {
+  "w": 640,
+  "h": 960,
+  "bytes": 159144
+ },
+ "back-paradox.webp": {
+  "w": 640,
+  "h": 960,
+  "bytes": 95008
+ },
+ "back-swarm.webp": {
+  "w": 640,
+  "h": 960,
+  "bytes": 131376
+ },
+ "back-veyran.webp": {
+  "w": 640,
+  "h": 960,
+  "bytes": 122732
+ },
+ "badge-health.webp": {
+  "w": 160,
+  "h": 160,
+  "bytes": 8752
+ },
+ "badge-power.webp": {
+  "w": 160,
+  "h": 160,
+  "bytes": 8630
+ },
+ "coin.webp": {
+  "w": 320,
+  "h": 320,
+  "bytes": 28768
+ },
+ "emblem-axiom.webp": {
+  "w": 200,
+  "h": 200,
+  "bytes": 12316
+ },
+ "emblem-concord.webp": {
+  "w": 200,
+  "h": 200,
+  "bytes": 16474
+ },
+ "emblem-evergrowth.webp": {
+  "w": 200,
+  "h": 200,
+  "bytes": 22468
+ },
+ "emblem-lunar.webp": {
+  "w": 200,
+  "h": 200,
+  "bytes": 13148
+ },
+ "emblem-nayrev.webp": {
+  "w": 200,
+  "h": 200,
+  "bytes": 16460
+ },
+ "emblem-paradox.webp": {
+  "w": 200,
+  "h": 200,
+  "bytes": 12044
+ },
+ "emblem-swarm.webp": {
+  "w": 200,
+  "h": 200,
+  "bytes": 17352
+ },
+ "emblem-veyran.webp": {
+  "w": 200,
+  "h": 200,
+  "bytes": 15158
+ },
+ "emblem.webp": {
+  "w": 256,
+  "h": 256,
+  "bytes": 26026
+ },
+ "favicon-32.png": {
+  "w": 32,
+  "h": 32,
+  "bytes": 1990
+ },
+ "frame-axiom-champion.webp": {
+  "w": 640,
+  "h": 960,
+  "bytes": 109616
+ },
+ "frame-axiom-unit.webp": {
+  "w": 640,
+  "h": 960,
+  "bytes": 55796
+ },
+ "frame-concord-champion.webp": {
+  "w": 640,
+  "h": 960,
+  "bytes": 109636
+ },
+ "frame-concord-spell.webp": {
+  "w": 640,
+  "h": 960,
+  "bytes": 76044
+ },
+ "frame-concord-unit.webp": {
+  "w": 640,
+  "h": 960,
+  "bytes": 68890
+ },
+ "frame-evergrowth-champion.webp": {
+  "w": 640,
+  "h": 960,
+  "bytes": 137886
+ },
+ "frame-evergrowth-unit.webp": {
+  "w": 640,
+  "h": 960,
+  "bytes": 108136
+ },
+ "frame-lunar-champion.webp": {
+  "w": 640,
+  "h": 960,
+  "bytes": 104724
+ },
+ "frame-lunar-spell.webp": {
+  "w": 640,
+  "h": 960,
+  "bytes": 83404
+ },
+ "frame-lunar-unit.webp": {
+  "w": 640,
+  "h": 960,
+  "bytes": 75910
+ },
+ "frame-nayrev-champion.webp": {
+  "w": 640,
+  "h": 960,
+  "bytes": 133256
+ },
+ "frame-nayrev-spell.webp": {
+  "w": 640,
+  "h": 960,
+  "bytes": 112748
+ },
+ "frame-nayrev-unit.webp": {
+  "w": 640,
+  "h": 960,
+  "bytes": 99386
+ },
+ "frame-paradox-champion.webp": {
+  "w": 640,
+  "h": 960,
+  "bytes": 139846
+ },
+ "frame-paradox-unit.webp": {
+  "w": 640,
+  "h": 960,
+  "bytes": 97494
+ },
+ "frame-swarm-champion.webp": {
+  "w": 640,
+  "h": 960,
+  "bytes": 101560
+ },
+ "frame-swarm-unit.webp": {
+  "w": 640,
+  "h": 960,
+  "bytes": 93578
+ },
+ "frame-veyran-champion.webp": {
+  "w": 640,
+  "h": 960,
+  "bytes": 127410
+ },
+ "frame-veyran-spell.webp": {
+  "w": 640,
+  "h": 960,
+  "bytes": 107784
+ },
+ "frame-veyran-unit.webp": {
+  "w": 640,
+  "h": 960,
+  "bytes": 96908
+ },
+ "gem-cost.webp": {
+  "w": 160,
+  "h": 160,
+  "bytes": 12076
+ },
+ "hangar.webp": {
+  "w": 1600,
+  "h": 900,
+  "bytes": 99142
+ },
+ "hero-1600.webp": {
+  "w": 1600,
+  "h": 900,
+  "bytes": 190152
+ },
+ "hero-2560.webp": {
+  "w": 2560,
+  "h": 1440,
+  "bytes": 355156
+ },
+ "hero-portrait.webp": {
+  "w": 1024,
+  "h": 1536,
+  "bytes": 243844
+ },
+ "holo-axiom.webp": {
+  "w": 820,
+  "h": 820,
+  "bytes": 109908
+ },
+ "holo-concord.webp": {
+  "w": 820,
+  "h": 820,
+  "bytes": 113352
+ },
+ "holo-evergrowth.webp": {
+  "w": 820,
+  "h": 820,
+  "bytes": 145404
+ },
+ "holo-lunar.webp": {
+  "w": 820,
+  "h": 820,
+  "bytes": 85680
+ },
+ "holo-nayrev.webp": {
+  "w": 820,
+  "h": 820,
+  "bytes": 140832
+ },
+ "holo-paradox.webp": {
+  "w": 820,
+  "h": 820,
+  "bytes": 166886
+ },
+ "holo-swarm.webp": {
+  "w": 820,
+  "h": 820,
+  "bytes": 86366
+ },
+ "holo-veyran.webp": {
+  "w": 820,
+  "h": 820,
+  "bytes": 151540
+ },
+ "logo.webp": {
+  "w": 900,
+  "h": 323,
+  "bytes": 109656
+ },
+ "path.webp": {
+  "w": 1600,
+  "h": 1066,
+  "bytes": 131848
+ },
+ "road-1.webp": {
+  "w": 1400,
+  "h": 933,
+  "bytes": 325674
+ },
+ "road-3.webp": {
+  "w": 1400,
+  "h": 933,
+  "bytes": 239112
+ },
+ "road-5.webp": {
+  "w": 1400,
+  "h": 933,
+  "bytes": 257164
+ },
+ "world-bom.webp": {
+  "w": 760,
+  "h": 1140,
+  "bytes": 151770
+ },
+ "world-novasiege.webp": {
+  "w": 760,
+  "h": 1140,
+  "bytes": 152588
+ },
+ "world-politics.webp": {
+  "w": 760,
+  "h": 1140,
+  "bytes": 99414
+ }
+}

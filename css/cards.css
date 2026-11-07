@@ -1,0 +1,102 @@
+/* Live card: geometry measured from the game's 2048×3072 frames (window, name bar, text box). */
+.cc-card {
+  --w: 200px;
+  --tx: 0; --ty: 0; --flip: 0deg; --shine: -1; --shineamt: 0; --foilk: .4;
+  width: var(--w);
+  aspect-ratio: 2 / 3;
+  position: relative;
+  perspective: calc(var(--w) * 5);
+  container-type: inline-size;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  touch-action: manipulation;
+}
+.cc-card__pivot {
+  position: absolute; inset: 0;
+  transform-style: preserve-3d;
+  transform: rotateX(calc(var(--ty) * -11deg)) rotateY(calc(var(--tx) * 13deg)) rotateY(var(--flip));
+  will-change: transform;
+}
+.cc-card__face, .cc-card__back {
+  position: absolute; inset: 0;
+  backface-visibility: hidden; -webkit-backface-visibility: hidden;
+  border-radius: 4.5%/3%;
+}
+.cc-card__face { overflow: hidden; background: #07090f; box-shadow: 0 1.2cqw 4cqw rgba(0,0,0,.55); }
+.cc-card__back { transform: rotateY(180deg); overflow: hidden; box-shadow: 0 1.2cqw 4cqw rgba(0,0,0,.55); }
+.cc-card__back img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* deep layer: the painting moves against the frame (CardFace _Parallax 0.04) */
+.cc-card__art { position: absolute; left: 7%; top: 5%; width: 86%; height: 53.5%; overflow: hidden; }
+.cc-card__art img {
+  /* The painting is deliberately larger than its window (room for the parallax), so it must not
+     inherit the site-wide image width cap; without the next line a dark strip shows on the right. */
+  position: absolute; inset: -6%; width: 112%; height: 112%; max-width: none; object-fit: cover; object-position: 50% 30%;
+  transform: translate(calc(clamp(-1, var(--tx), 1) * -4%), calc(clamp(-1, var(--ty), 1) * -4%));
+}
+.cc-card__art::after { /* iridescent art foil on commanders */
+  content: ""; position: absolute; inset: 0; mix-blend-mode: color-dodge; opacity: calc(var(--artfoil, 0) * .22);
+  background: linear-gradient(calc(110deg + var(--tx) * 40deg), #ff6b6b, #ffd36b, #6bffb5, #6bc8ff, #c56bff, #ff6b6b);
+  background-size: 300% 300%; background-position: calc(50% + var(--tx) * 60%) calc(50% - var(--ty) * 60%);
+}
+.cc-card__frame { position: absolute; inset: 0; width: 100%; height: 100%; display: block; pointer-events: none; }
+
+/* holographic foil + twinkles, only on the frame's metal (masked by the frame image) */
+.cc-card__foil {
+  position: absolute; inset: 0; pointer-events: none;
+  -webkit-mask: var(--mask) center / 100% 100% no-repeat; mask: var(--mask) center / 100% 100% no-repeat;
+  mix-blend-mode: color-dodge; opacity: calc(var(--foilk) * .55);
+  background:
+    radial-gradient(circle at calc(30% + var(--tx) * 30%) calc(25% + var(--ty) * 30%), rgba(255,255,255,.55), transparent 22%),
+    linear-gradient(calc(125deg + var(--tx) * 30deg), #ff7a7a 0%, #ffe07a 18%, #7affc2 36%, #7ad4ff 54%, #c77aff 72%, #ff7a7a 90%);
+  background-size: 100% 100%, 260% 260%;
+  background-position: 0 0, calc(50% + var(--tx) * 70%) calc(50% - var(--ty) * 70%);
+}
+/* specular sweep: a diagonal band crossing the card (CardFace: (x*.75 + y*.65) - _Shine) */
+.cc-card__shine {
+  position: absolute; inset: 0; pointer-events: none; mix-blend-mode: screen;
+  background: linear-gradient(118deg, transparent calc((var(--shine) * 100% / 1.4) - 14%), rgba(255,250,235,.55) calc(var(--shine) * 100% / 1.4), transparent calc((var(--shine) * 100% / 1.4) + 14%));
+  opacity: calc(var(--shineamt) * .55);
+}
+/* flowing energy rim in the army colour */
+.cc-card__rim {
+  position: absolute; inset: 0; border-radius: inherit; pointer-events: none; opacity: 0; transition: opacity .35s;
+  box-shadow: inset 0 0 0 .8cqw color-mix(in srgb, var(--army) 70%, transparent), inset 0 0 6cqw color-mix(in srgb, var(--army) 45%, transparent);
+}
+.cc-card:hover .cc-card__rim, .cc-card:focus-visible .cc-card__rim, .cc-card.is-active .cc-card__rim, .cc-card.is-selected .cc-card__rim { opacity: 1; animation: rim 2.4s ease-in-out infinite; }
+@keyframes rim { 50% { box-shadow: inset 0 0 0 .8cqw color-mix(in srgb, var(--army) 100%, white 10%), inset 0 0 9cqw color-mix(in srgb, var(--army) 60%, transparent); } }
+
+/* code-drawn lettering, like the game (no text baked into art) */
+.cc-card__cost {
+  position: absolute; left: -2.5%; top: -1.5%; width: 25%; aspect-ratio: 1; display: grid; place-items: center;
+  background: url(../assets/img/gem-cost.webp) center / contain no-repeat;
+  font: 700 13cqw/1 "Barlow Condensed", sans-serif; color: #fff; text-shadow: 0 .6cqw 1.2cqw #001a33, 0 0 .5cqw #003;
+}
+.cc-card__name {
+  position: absolute; left: 10%; right: 10%; top: 59.6%; height: 3.8%; display: grid; place-items: center;
+  font: 600 min(6.6cqw, calc(104cqw / var(--nl, 12)))/1 "Cinzel", serif; letter-spacing: .02em; color: #f7ecd2; text-align: center; white-space: nowrap; overflow: hidden;
+  text-shadow: 0 .4cqw 1cqw #000;
+}
+.cc-card__type {
+  position: absolute; left: 12%; right: 12%; top: 67.5%; text-align: center;
+  font: 600 4.6cqw/1 "Barlow Condensed", sans-serif; letter-spacing: .12em; text-transform: uppercase; color: color-mix(in srgb, var(--army) 70%, white);
+}
+.cc-card__text {
+  position: absolute; left: 12%; right: 12%; top: 72.5%; bottom: 13%; display: grid; place-items: center; text-align: center;
+  font: 500 5.9cqw/1.22 "Barlow", sans-serif; color: #e9e3d4; text-wrap: balance;
+}
+.cc-card__power, .cc-card__health {
+  position: absolute; bottom: -1.5%; width: 23%; aspect-ratio: 1; display: grid; place-items: center;
+  font: 700 12cqw/1 "Barlow Condensed", sans-serif; color: #fff; text-shadow: 0 .5cqw 1.2cqw #000;
+}
+.cc-card__power { left: -2%; background: url(../assets/img/badge-power.webp) center / contain no-repeat; }
+.cc-card__health { right: -2%; background: url(../assets/img/badge-health.webp) center / contain no-repeat; }
+.cc-card__power b, .cc-card__health b { transform: translateY(-4%); display: block; }
+
+.cc-card__digitise { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 5; }
+.cc-card.is-digitising .cc-card__face > :not(canvas) { visibility: hidden; }
+.cc-card.is-digitising .cc-card__face { background: transparent; box-shadow: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .cc-card:hover .cc-card__rim, .cc-card.is-active .cc-card__rim { animation: none; }
+}

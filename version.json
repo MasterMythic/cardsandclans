@@ -1,6 +1,6 @@
 {
-  "version": "0.3.0",
+  "version": "0.4.0",
   "download": "https://mastermythic.github.io/cardsandclans/",
   "zip": "https://github.com/MasterMythic/cardsandclans/releases/latest/download/CardsAndClans-Windows.zip",
-  "notes": "Online battles: host, join with a code, open battles, Direct connect."
+  "notes": "Dice: every card rolls a small range, luck keywords and critical hits; bigger battles (Core 25, energy 12, Reserve 5); The March and Clan Ascent."
 }
