@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy — Cards &amp; Clans</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+<main class="text">
+  <p><a href="index.html">← Cards &amp; Clans</a></p>
+  <h1>Privacy</h1>
+  <p class="small">Last updated 7 November 2026</p>
+
+  <h2>Playing offline</h2>
+  <p>Battles against the computer, the deck builder, Trophy Road and Path of Commanders run entirely on your PC. Your saves stay on your PC. The game sends nothing anywhere.</p>
+
+  <h2>Playing online</h2>
+  <p>When you play online the game creates a <b>player key</b> on your PC. Its public half gives you a player id (16 letters and numbers); the private half never leaves your PC. You choose a <b>player name</b> that other players see. There are no accounts, emails or passwords.</p>
+  <p>The free <b>meeting point</b> (a small service on Cloudflare) is used to find each other and pass the battle's moves between the two players. It sees and stores:</p>
+  <ul>
+    <li>your player id and player name while a battle is open or listed;</li>
+    <li>your internet (IP) address, to stop banned players and limit how many new player ids can come from one address each day (kept for 3 days);</li>
+    <li>reports one player sends about another (reporter id, reported id, reason, room code, a short note, and the reporter's address), kept until they are reviewed;</li>
+    <li>the ban list (banned player ids and addresses).</li>
+  </ul>
+  <p>The meeting point does not read or keep the battle itself. Moves pass straight through it. Players never see each other's internet address when they use room codes.</p>
+  <p><b>Direct connect</b> does not use the meeting point at all: the two games talk to each other directly, so the host's address is known to the player who joins (they typed it).</p>
+
+  <h2>Update check</h2>
+  <p>The online page reads this website's <code>version.json</code> to tell you when a new version is out. That request contains nothing about you, apart from what any web request shows (your address).</p>
+
+  <h2>Children</h2>
+  <p>There is no chat. The only text other players see is your player name, and names with slurs or rude words are refused.</p>
+
+  <h2>Removing your data</h2>
+  <p>Delete the file <code>online_profile.json</code> in your save folder (<code>%USERPROFILE%\AppData\LocalLow\Cards _ Clans\Cards _ Clans</code>) to make a new player key. To ask for a report or ban about you to be removed, contact the game's maker through the project page (<a href="https://github.com/MasterMythic/cardsandclans/issues">github.com/MasterMythic/cardsandclans</a>).</p>
+</main>
+</body>
+</html>

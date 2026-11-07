@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cards &amp; Clans — free card battles</title>
+<meta name="description" content="Cards &amp; Clans: a free card battle game for Windows. Battle the computer or other players online, build decks, climb the Trophy Road.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <img class="hero-art" src="img/nova.jpg" alt="Nova Siege: armies of light and shadow clash over a burning core">
+  <div class="hero-veil"></div>
+  <div class="hero-text">
+    <p class="kicker">FREE · NO ADS · NO ACCOUNTS</p>
+    <h1>Cards &amp; Clans</h1>
+    <p class="lead">Command an army of cards. Battle the computer, or challenge another player online.</p>
+    <a class="button primary" id="download" href="https://github.com/MasterMythic/cardsandclans/releases/latest/download/CardsAndClans-Windows.zip">DOWNLOAD FOR WINDOWS</a>
+    <p class="small">Version <span id="ver">0.3.0</span> · Windows 10 or 11 (64-bit) · about 1.5 GB · <a href="#install">How to install</a></p>
+  </div>
+</header>
+
+<main>
+  <section class="modes">
+    <article>
+      <img src="img/nova.jpg" alt="Nova Siege battle art">
+      <h2>Nova Siege</h2>
+      <p>Eight sci-fi armies fight over a dying universe. Four clans and their opposite twins, each with its own Commander, cards and battlefield.</p>
+    </article>
+    <article>
+      <img src="img/bom.jpg" alt="Battles for Liberty battle art">
+      <h2>Battles for Liberty</h2>
+      <p>The same card battles in a world of ancient armies, painted by hand, with its own words, sounds and menus.</p>
+    </article>
+  </section>
+
+  <section class="online" id="online">
+    <h2>Play online</h2>
+    <p>Online battles are hosted by the players themselves: one player hosts, the other joins. There are no servers running the game and no accounts to make.</p>
+    <ul>
+      <li><b>Host a battle</b> and tell your friend the 6-letter room code, or leave it listed under <b>Open battles</b> so anyone can join.</li>
+      <li><b>Direct connect</b> works on your home network with no online service at all: one PC hosts, the other types its address.</li>
+      <li><b>Fair play:</b> both games run the full rules and check every move. The cards you haven't played never leave your PC, and every deck and shuffle is checked when the battle ends. Players whose game breaks the rules are blocked automatically.</li>
+      <li><b>Equal Level:</b> card levels don't count online, there are no hints, and each move has a 75-second clock.</li>
+      <li>You can <b>block</b> and <b>report</b> any player from the battle's result page.</li>
+    </ul>
+    <p class="small">Both players need the same version of the game. The game tells you when a new version is out.</p>
+  </section>
+
+  <section class="install" id="install">
+    <h2>How to install</h2>
+    <ol>
+      <li>Download <b>CardsAndClans-Windows.zip</b> and unzip it (right-click → <i>Extract All</i>).</li>
+      <li>Open the folder and double-click <b>NovaSiege.exe</b>.</li>
+      <li>Windows may show <i>"Windows protected your PC"</i>, because the game isn't signed with a paid certificate. Click <b>More info</b>, then <b>Run anyway</b>.</li>
+      <li>The first time you host a Direct-connect battle, Windows may ask to let the game through the firewall: allow it.</li>
+    </ol>
+    <p>To update, download the new zip and replace the old folder. Your saves are kept (they live in your user folder, not the game folder).</p>
+  </section>
+</main>
+
+<footer>
+  <p>Cards &amp; Clans is free and non-profit. Game art was made for this game. <a href="privacy.html">Privacy</a></p>
+</footer>
+<script>
+  // show the newest version number from version.json
+  fetch("version.json", { cache: "no-store" }).then(r => r.json()).then(v => {
+    if (v.version) document.getElementById("ver").textContent = v.version;
+    if (v.zip) document.getElementById("download").href = v.zip;
+  }).catch(() => {});
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+:root { --gold: #f2c66d; --ink: #070b14; --panel: #0e1526; --text: #e6ecfa; --muted: #a9b4cc; }
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--ink); color: var(--text); font: 17px/1.6 "Segoe UI", system-ui, -apple-system, sans-serif; }
+a { color: var(--gold); }
+h1, h2 { font-weight: 700; letter-spacing: 0.06em; }
+.small { color: var(--muted); font-size: 14px; }
+
+.hero { position: relative; min-height: 78vh; display: flex; align-items: flex-end; overflow: hidden; }
+.hero-art { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.hero-veil { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(7,11,20,0.95) 0%, rgba(7,11,20,0.7) 45%, rgba(7,11,20,0.1) 100%), linear-gradient(0deg, var(--ink) 0%, rgba(7,11,20,0) 35%); }
+.hero-text { position: relative; padding: 8vh 7vw; max-width: 760px; }
+.hero h1 { font-size: clamp(44px, 7vw, 86px); margin: 0 0 8px; color: #fff; text-transform: uppercase; text-shadow: 0 4px 30px rgba(0,0,0,0.6); }
+.kicker { color: var(--gold); letter-spacing: 0.3em; font-size: 14px; margin: 0; }
+.lead { font-size: 21px; color: var(--text); }
+.button { display: inline-block; padding: 16px 34px; margin: 14px 0 10px; border-radius: 10px; text-decoration: none; font-weight: 700; letter-spacing: 0.12em; }
+.button.primary { background: linear-gradient(180deg, #ffd98a, #d69a2f); color: #1b1203; box-shadow: 0 0 34px rgba(242,198,109,0.35); }
+.button.primary:hover { filter: brightness(1.08); }
+
+main { max-width: 1100px; margin: 0 auto; padding: 0 24px 40px; }
+.modes { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 26px; margin-top: -40px; position: relative; }
+.modes article { background: var(--panel); border: 1px solid rgba(242,198,109,0.25); border-radius: 14px; overflow: hidden; }
+.modes img { width: 100%; height: 210px; object-fit: cover; display: block; }
+.modes h2, .modes p { margin: 14px 22px; }
+.modes h2 { color: var(--gold); font-size: 22px; }
+section.online, section.install { margin-top: 48px; background: var(--panel); border-radius: 14px; padding: 10px 30px 22px; border: 1px solid rgba(255,255,255,0.06); }
+section h2 { color: var(--gold); }
+li { margin: 6px 0; }
+footer { text-align: center; color: var(--muted); padding: 30px; font-size: 14px; }
+
+body.page main.text { max-width: 780px; padding-top: 30px; }
+code { background: #141c30; padding: 1px 6px; border-radius: 4px; }
