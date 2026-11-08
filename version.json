@@ -1,6 +1,6 @@
 {
-  "version": "0.4.2",
+  "version": "0.4.3",
   "download": "https://mastermythic.github.io/cardsandclans/",
   "zip": "https://github.com/MasterMythic/cardsandclans/releases/latest/download/CardsAndClans-Windows.zip",
-  "notes": "0.4.2: Stores/Reserve pay for any card; fewer Bewilders and Jams; time-outs choose targets, keep blockers and resolve waiting spells; hints above the turn label; improved March recovery and Captain framing; centred PLAY, refreshed Codex menu portraits and King Noah's corrected goblet. Includes 0.4.1: 30-second moves (10 to resolve), original dice/attack pace and card inspection on the enemy turn. Both online players must update. Layered arenas remain a separate prototype."
+  "notes": "0.4.3: Fixed BoM card numbers after switching modes. Hovered hand cards pop up over their slots; board-card previews appear over the hovered card instead of the side dock. You can still study cards during the enemy turn. Includes 0.4.2: Stores/Reserve pay for any card; fewer Bewilders and Jams; time-outs choose targets, keep blockers and resolve waiting spells; hints above the turn label; improved March recovery and Captain framing; centred PLAY, refreshed Codex menu portraits and King Noah's corrected goblet. Includes 0.4.1: 30-second moves (10 to resolve), original dice/attack pace and card inspection on the enemy turn. Both online players must update. Layered arenas remain a separate prototype."
 }
