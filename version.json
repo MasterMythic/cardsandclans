@@ -1,6 +1,6 @@
 {
-  "version": "0.4.1",
+  "version": "0.4.2",
   "download": "https://mastermythic.github.io/cardsandclans/",
   "zip": "https://github.com/MasterMythic/cardsandclans/releases/latest/download/CardsAndClans-Windows.zip",
-  "notes": "0.4.1: 30-second moves (10 to resolve), dice at the original pace, study your cards on the enemy turn. 0.4.0: Dice: every card rolls a small range, luck keywords and critical hits; bigger battles (Core 25, energy 12, Reserve 5); The March and Clan Ascent."
+  "notes": "0.4.2: Stores/Reserve pay for any card; fewer Bewilders and Jams; time-outs choose targets, keep blockers and resolve waiting spells; hints above the turn label; improved March recovery and Captain framing; centred PLAY, refreshed Codex menu portraits and King Noah's corrected goblet. Includes 0.4.1: 30-second moves (10 to resolve), original dice/attack pace and card inspection on the enemy turn. Both online players must update. Layered arenas remain a separate prototype."
 }
